@@ -46,7 +46,7 @@ function SearchResults() {
 
         <div className="mt-6">
           <Link
-            to="/"
+            to="/Recipify"
             className="text-purple-600 hover:underline text-sm"
           >
             Go back to Home
