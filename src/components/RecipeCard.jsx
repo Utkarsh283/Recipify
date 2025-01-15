@@ -12,7 +12,7 @@ function RecipeCard() {
         async function getRandomRecipe() {
             if (!recipeCache.recipe) {
                 try {
-                    const apiKey = '5fa7da2301b14dde83d4106054d595f9';
+                    const apiKey = '5ff6abdab4a6416c9be1acb0be2dc8e8';
                     const resp = await axios.get(`https://api.spoonacular.com/recipes/random?apiKey=${apiKey}`);
                     recipeCache.recipe = resp.data.recipes[0];
                     setRecipeData(recipeCache.recipe);
