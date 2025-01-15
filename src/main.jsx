@@ -7,6 +7,8 @@ import App from './App.jsx';
 import { createBrowserRouter, RouterProvider, Route, createRoutesFromElements } from 'react-router-dom';
 import Layout from './Layout.jsx';
 import Home from './pages/Home.jsx';
+import RecipePage from './pages/RecipePage.jsx';
+import SearchResults from './pages/Search.jsx';
 
 
 
@@ -14,8 +16,10 @@ import Home from './pages/Home.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     
-    <Route path='/Recipify' element={<Layout />} >
+    <Route path='/Recipify/' element={<Layout />} >
        < Route path='' element={<Home />} />
+       < Route path='recipe' element={<RecipePage />} />
+       < Route path='search' element={<SearchResults />} />
     </Route>
   )
 );
