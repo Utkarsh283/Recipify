@@ -36,7 +36,7 @@ function RecipeCard() {
         : '';
 
     return (
-        <div className="max-w-lg hover:shadow-2xl hover:shadow-gray-600 bg-white border border-gray-200 rounded-lg shadow dark:bg-purple-800 dark:border-purple-700 ml-5">
+        <div className="max-w-lg hover:shadow-2xl hover:shadow-gray-600 bg-white border border-gray-200 rounded-lg shadow dark:bg-purple-800 dark:border-purple-700 ml-5 mr-5">
             <a href="#">
                 <div className='border  border-purple-800 rounded-lg px-5 py-5'>
                     <img className="rounded-lg" src={recipeData?.image} alt="" />
