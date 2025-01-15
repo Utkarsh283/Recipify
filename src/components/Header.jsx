@@ -7,7 +7,7 @@ function Header() {
 
   const handleSearch = async (e) => {
     e.preventDefault()
-    const apiKey = '5fa7da2301b14dde83d4106054d595f9'
+    const apiKey = '5ff6abdab4a6416c9be1acb0be2dc8e8'
     const response = await fetch(
       `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=${searchTerm}&number=10`
     )
