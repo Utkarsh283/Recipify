@@ -18,6 +18,10 @@ function RecipePage() {
         ? recipe.summary.replace(/<[^>]*>/g, '')
         : '';
 
+        const instructionsWithoutHtml = recipe?.instructions
+        ? recipe.instructions.replace(/<[^>]*>/g, '')
+        : '';
+
   return (
     <div className="flex flex-wrap items-center justify-center bg-purple-100 ">
 
@@ -29,7 +33,7 @@ function RecipePage() {
         <h2 className='text-lg font-semibold'>Ingredients</h2>
         <p className="text-gray-700 mb-4"> {ingredients}</p>
         <h2 className='text-lg font-semibold'>Instructions</h2>
-        <p className="text-gray-700 mb-4"> {recipe.instructions}</p>
+        <p className="text-gray-700 mb-4"> {instructionsWithoutHtml}</p>
         <button className='bg-purple-700 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded' onClick={() => window.open(recipe.sourceUrl, '_blank')} >Read More</button>
       </div>
       
